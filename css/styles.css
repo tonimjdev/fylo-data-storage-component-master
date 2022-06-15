@@ -1,0 +1,215 @@
+/* Estilos para reto de Frontend Mentor by Toni Machado */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+:root {
+  /* Neutral */
+  --paleBLue: hsl(243, 100%, 93%);
+  --grayishBlue: hsl(229, 7%, 55%);
+  --darkBlue: hsl(228, 56%, 26%);
+  --veryDarkBlue: hsl(229, 57%, 11%);
+  --barraLeft: rgb(253, 160, 154);
+  --barraRight: rgb(255, 86, 150);
+}
+body {
+  font-size: 14px;
+  background-color: var(--veryDarkBlue);
+  background-image: url("/images/bg-desktop.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  color: hsl(0, 0%, 100%);
+}
+h1 {
+  display: none;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  height: 100vh;
+}
+/* Left Card */
+.fyloCard {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 200px;
+  background-color: var(--darkBlue);
+  padding: 40px;
+  gap: 30px;
+  border-radius: 15px;
+  border-top-right-radius: 100px;
+}
+.cajaIconos {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+.iconos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  background-color: var(--veryDarkBlue);
+  border-radius: 10px;
+}
+/* Right Card */
+.gbCard {
+  display: flex;
+  flex-direction: column;
+  padding: 0 40px 0 40px;
+  width: 540px;
+  height: 150px;
+  position: relative;
+  margin-top: 50px;
+  background-color: var(--darkBlue);
+  border-radius: 15px;
+}
+.barraBox {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  bottom: 2em;
+  font-weight: 200;
+}
+.negrita {
+  font-weight: 700;
+}
+.barraFondo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 460px;
+  height: 17px;
+  background-color: rgb(21, 31, 72);
+  border-radius: 20px;
+  padding: 3px 2px 2px 3px;
+}
+.barra {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 340px;
+  height: 12px;
+  background: linear-gradient(to right, var(--barraLeft), var(--barraRight));
+  border-radius: 16px;
+  padding-right: 2px;
+}
+.pieBarra {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 0.85em;
+  font-weight: 500;
+}
+.circulo {
+  background-color: white;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+}
+.globo {
+  width: 180px;
+  height: 70px;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-color: white;
+  color: black;
+  position: relative;
+  top: -3.4em;
+  right: -20em;
+}
+.globoTexto {
+  width: 180px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5em;
+}
+.gbLeft {
+  font-size: 0.32em;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--grayishBlue);
+  position: relative;
+  bottom: 0.7em;
+}
+.triangulo {
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-right: 12px solid white;
+  border-top: 12px solid white;
+  position: relative;
+  right: -156px;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(332, 51%, 58%);
+}
+/* Responsive */
+@media (max-width: 850px) {
+  .container {
+    flex-direction: column;
+  }
+  .fyloCard {
+    width: 325px;
+  }
+  .gbCard {
+    width: 325px;
+    height: 160px;
+    margin: 0;
+    position: relative;
+    top: -0.8em;
+  }
+  .barraFondo {
+    width: 250px;
+    height: 18px;
+  }
+  .barra {
+    width: 190px;
+    height: 13px;
+  }
+  .barraBox {
+    bottom: 2.3em;
+  }
+  .barraBox p {
+    text-align: center;
+    position: relative;
+    top: -0.5em;
+  }
+  .pieBarra {
+    position: relative;
+    top: 0.5em;
+  }
+
+  .globo {
+    border-radius: 12px;
+    right: -2.2em;
+    top: 9em;
+  }
+
+  .triangulo {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  body {
+    background-image: url(/images/bg-mobile.png);
+    background-position: center;
+  }
+}
