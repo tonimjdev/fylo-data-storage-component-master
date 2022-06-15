@@ -17,7 +17,7 @@
 body {
   font-size: 14px;
   background-color: var(--veryDarkBlue);
-  background-image: url("images/bg-desktop.png");
+  background-image: url("../images/bg-desktop.png");
   background-repeat: no-repeat;
   background-position: bottom;
   color: hsl(0, 0%, 100%);
@@ -209,7 +209,7 @@ h1 {
 }
 @media (max-width: 600px) {
   body {
-    background-image: url("images/bg-mobile.png");
+    background-image: url("../images/bg-mobile.png");
     background-position: center;
   }
 }
